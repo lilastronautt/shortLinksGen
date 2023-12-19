@@ -1,0 +1,60 @@
+.link_overlay__cont {
+  background-color: white;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-right: -17.5%;
+  margin-top: -148px;
+  z-index: 10;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.link_overlay__cont label {
+  margin-bottom: 0.4rem;
+  color: #fd3f4c;
+  display: block;
+  font-size: 1rem;
+}
+
+.link_overlay__cont input {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.link_overlay__cont input:focus-visible {
+  outline: none;
+}
+
+.link_overlay__cont button {
+  background: rgb(251, 75, 40);
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  color: #dad7dc;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+.link_overlay__cont button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.moveAbove {
+  animation: moveAboveAni 1s ease;
+}
+
+@keyframes moveAboveAni {
+  from {
+    transform: translateZ(0) scale(0.3);
+  }
+  to {
+    transform: translateZ(0) scale(1);
+  }
+}

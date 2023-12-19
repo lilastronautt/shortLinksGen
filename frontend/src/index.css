@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.moveRight {
+  animation: moveRightAnimation 1s forwards;
+}
+
+.moveLeft {
+  animation: moveLeftAnimation 1s forwards;
+}
+
+@keyframes moveRightAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(250px);
+  }
+}
+
+@keyframes moveLeftAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-250px);
+  }
+}
+
+.smoveRight {
+  animation: smoveRightAnimation 1s forwards;
+}
+
+.smoveLeft {
+  animation: smoveLeftAnimation 1s forwards;
+}
+
+@keyframes smoveRightAnimation {
+  from {
+    transform: translateX(250px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes smoveLeftAnimation {
+  from {
+    transform: translateX(-250px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}

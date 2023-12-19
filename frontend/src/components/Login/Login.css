@@ -1,0 +1,118 @@
+.user_action_parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_action__cont {
+  width: 70%;
+  height: 70%;
+  box-shadow: -8px 5px 20px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  margin-top: -242px;
+}
+
+.user_action_form {
+  text-align: center;
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  padding: 3rem 0;
+  background: white;
+}
+
+.user_action_form h1 {
+  font-weight: bold;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.user_action_form input {
+  display: block;
+  margin: 2rem auto;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.4rem 0.4rem;
+  width: 50%;
+}
+
+.user_action_form input:focus-visible {
+  outline: none;
+}
+
+.user_action_form a {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.user_action_form button {
+  background-color: rgb(251, 75, 40);
+  color: #dad7dc;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.user_action_form button:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.user_action_div2 {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  background-image: linear-gradient(
+    90deg,
+    hsl(356, 98%, 62%) 0%,
+    hsl(355deg 98% 62%) 11%,
+    hsl(354deg 99% 62%) 22%,
+    hsl(352deg 99% 62%) 33%,
+    hsl(351deg 99% 62%) 44%,
+    hsl(350deg 99% 62%) 56%,
+    hsl(349deg 99% 63%) 67%,
+    hsl(348deg 99% 63%) 78%,
+    hsl(347deg 99% 63%) 89%,
+    hsl(346deg 99% 63%) 100%
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.user_action_div2 h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.user_action_div2 h4 {
+  font-weight: normal;
+  margin: 1rem;
+}
+
+.user_action_div2 button {
+  width: 9rem;
+  margin: 2rem auto;
+  padding: 0.3rem 0;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.user_action_div2 button:hover {
+  background: white;
+  color: rgba(253, 67, 78, 255);
+  cursor: pointer;
+}

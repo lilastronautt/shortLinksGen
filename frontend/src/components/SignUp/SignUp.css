@@ -1,0 +1,28 @@
+.form_signup__fix {
+  padding: 1rem;
+  left: 50%;
+  right: 0 !important;
+}
+.signup_div2__fix {
+  left: 0;
+}
+
+.form_signup__fix input {
+  margin: 1rem auto;
+}
+
+.form_signup__fix button {
+  margin-top: 2.5rem;
+}
+
+.loader_register {
+  position: absolute;
+  right: 4rem;
+  top: -1.2rem;
+}
+
+@media (max-width: 1285px) {
+  .loader_register {
+    right: 2rem;
+  }
+}
