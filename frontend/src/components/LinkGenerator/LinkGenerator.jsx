@@ -165,7 +165,6 @@ const LinkGenerator = () => {
                     const res = await req.json();
                     setShowModal(() => true);
                     const newArray = res.map((el) => JSON.parse(el.data));
-                    console.log(newArray);
                     setModalMsg(() => newArray);
                   };
 
