@@ -8,7 +8,10 @@ const Modal = ({ msg, ok, cancel }) => {
   return (
     <div className="modal_main">
       <div className="modal_cont">
-        <pre>{msg == "[]" ? "No Analytics to show" : msg}</pre>
+        <pre>
+          {msg == "[]" ? "No Analytics to show" : JSON.stringify(msg, null, 2)}
+        </pre>
+
         <div className="modal_button_cont">
           <button onClick={okHandler}>ok</button>
         </div>

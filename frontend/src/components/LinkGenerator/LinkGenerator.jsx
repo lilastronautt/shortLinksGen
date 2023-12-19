@@ -163,9 +163,10 @@ const LinkGenerator = () => {
                       `http://localhost:3000/getlinkanalytics/${row.shorturl}`
                     );
                     const res = await req.json();
-
                     setShowModal(() => true);
-                    setModalMsg(() => JSON.stringify(res, null, 2));
+                    const newArray = res.map((el) => JSON.parse(el.data));
+                    console.log(newArray);
+                    setModalMsg(() => newArray);
                   };
 
                   const remainingTime = calculateTimeRemaining(row.expiresat);
