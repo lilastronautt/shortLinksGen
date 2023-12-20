@@ -28,14 +28,17 @@ const LinkInputOverlay = ({ sih }) => {
     e.preventDefault();
     (async () => {
       try {
-        const req = await fetch("http://localhost:3000/linkgen", {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
+        const req = await fetch(
+          "https://apricot-fossa-sock.cyclic.app/linkgen",
+          {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          }
+        );
         const res = await req.json();
         if (res.msg == "ok") {
           setShowNotifications(() => true);

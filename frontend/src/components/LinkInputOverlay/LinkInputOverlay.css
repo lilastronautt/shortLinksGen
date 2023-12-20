@@ -45,16 +45,3 @@
   color: white;
   cursor: pointer;
 }
-
-.moveAbove {
-  animation: moveAboveAni 1s ease;
-}
-
-@keyframes moveAboveAni {
-  from {
-    transform: translateZ(0) scale(0.3);
-  }
-  to {
-    transform: translateZ(0) scale(1);
-  }
-}

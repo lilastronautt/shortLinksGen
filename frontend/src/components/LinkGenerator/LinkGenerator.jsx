@@ -88,7 +88,7 @@ const LinkGenerator = () => {
       authState &&
         (async () => {
           const req = await fetch(
-            `http://localhost:3000/getAllLinks/${localStorage.getItem(
+            `https://apricot-fossa-sock.cyclic.app/getAllLinks/${localStorage.getItem(
               "userId"
             )}`
           );
@@ -155,12 +155,14 @@ const LinkGenerator = () => {
               {tableData &&
                 tableData?.map((row) => {
                   const linkRouterHandler = () => {
-                    window.open(`http://localhost:3000/${row.shorturl}`);
+                    window.open(
+                      `https://apricot-fossa-sock.cyclic.app/${row.shorturl}`
+                    );
                   };
 
                   const showAnalyticsHandler = async () => {
                     const req = await fetch(
-                      `http://localhost:3000/getlinkanalytics/${row.shorturl}`
+                      `https://apricot-fossa-sock.cyclic.app/getlinkanalytics/${row.shorturl}`
                     );
                     const res = await req.json();
                     setShowModal(() => true);
@@ -171,7 +173,7 @@ const LinkGenerator = () => {
                   const remainingTime = calculateTimeRemaining(row.expiresat);
 
                   const copyToClipboard = () => {
-                    const urlToCopy = `http://localhost:3000/${row.shorturl}`;
+                    const urlToCopy = `https://apricot-fossa-sock.cyclic.app/${row.shorturl}`;
                     copy(urlToCopy);
                     setShowNotifications(() => true);
                     setNotifxnsMsg(() => "Copied to clipboard");

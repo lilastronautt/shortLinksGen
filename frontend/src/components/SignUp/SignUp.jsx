@@ -66,7 +66,7 @@ const SignUp = ({ sih, caa }) => {
 
     (async () => {
       try {
-        const req = await fetch("http://localhost:3000/signup", {
+        const req = await fetch("https://apricot-fossa-sock.cyclic.app/signup", {
           method: "POST",
           headers: {
             Accept: "application/json",
@@ -119,7 +119,7 @@ const SignUp = ({ sih, caa }) => {
     setEmailExists(() => false);
     let timer = setTimeout(() => {
       (async () => {
-        const req = await fetch("http://localhost:3000/getallemails");
+        const req = await fetch("https://apricot-fossa-sock.cyclic.app/getallemails");
         const res = await req.json();
         res.forEach((el) => {
           if (el.email == signUpData.email) {

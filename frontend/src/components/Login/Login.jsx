@@ -26,7 +26,7 @@ const Login = ({ ssh, caa }) => {
     e.preventDefault();
     (async () => {
       try {
-        const req = await fetch("http://localhost:3000/login", {
+        const req = await fetch("https://apricot-fossa-sock.cyclic.app/login", {
           method: "POST",
           headers: {
             Accept: "application/json",
